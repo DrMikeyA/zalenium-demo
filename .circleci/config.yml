@@ -39,6 +39,8 @@ jobs:
       # Database setup
       #- run: bundle exec rake db:create
       #- run: bundle exec rake db:schema:load
+      - run: docker pull elgalu/selenium
+      - run: docker pull dosel/zalenium
       - run:
           name: set up docker
           command: |
