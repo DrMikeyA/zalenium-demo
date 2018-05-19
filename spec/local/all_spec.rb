@@ -42,8 +42,4 @@ describe 'All: ', :local do
       expect(driver.find_element(GitHubPage::POPULAR_REPO).displayed?).to be true
     end
   end
-
-  after(:all) do
-    BaseClass.driver.quit
-  end
 end
