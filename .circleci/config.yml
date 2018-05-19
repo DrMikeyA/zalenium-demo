@@ -50,8 +50,7 @@ jobs:
             bundle exec rspec spec/local/all_spec.rb --format progress \
                             --format RspecJunitFormatter \
                             --out /tmp/test-results/rspec.xml \
-                            --format progress \
-                            $TEST_FILES
+                            --format progress
 
       # collect reports
       - store_test_results:
