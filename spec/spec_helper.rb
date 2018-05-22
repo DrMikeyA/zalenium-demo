@@ -1,6 +1,5 @@
 require 'selenium-webdriver'
 require 'rspec'
-require 'chromedriver-helper'
 require_relative '../test_helper'
 
 module BaseClass
