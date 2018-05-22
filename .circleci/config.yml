@@ -54,7 +54,7 @@ jobs:
           command: |
             mkdir /tmp/test-results
 
-            rake local
+            rake remote
 #            bundle exec rspec spec/remote/all_spec.rb --format progress \
 #                            --format RspecJunitFormatter \
 #                            --out /tmp/test-results/rspec.xml \
