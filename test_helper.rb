@@ -10,4 +10,3 @@ require_relative 'spec/spec_helper'
 
 include GooglePage
 include GitHubPage
-include BaseClass
