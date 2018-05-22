@@ -5,7 +5,7 @@ describe 'All: ', :local do
   let(:driver) { BaseClass.driver }
 
   before(:all) do
-    BaseClass.start_remote_browser
+    BaseClass.start_browser
     @search_term = 'ruthtech.com'
   end
 
