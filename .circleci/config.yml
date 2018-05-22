@@ -51,8 +51,7 @@ jobs:
             bundle exec rspec spec/remote/all_spec.rb --format progress \
                             --format RspecJunitFormatter \
                             --out /tmp/test-results/rspec.xml \
-                            --format progress \
-                            $(circleci tests glob "spec/remote/all_spec.rb" | circleci tests split --split-by=timings)
+                            --format progress
 
       # collect reports
       - store_test_results:
