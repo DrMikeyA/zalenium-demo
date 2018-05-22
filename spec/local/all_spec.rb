@@ -5,7 +5,7 @@ describe 'All: ', :local do
   let(:driver) { BaseClass.driver }
 
   before(:all) do
-    BaseClass.start_remote_browser
+    BaseClass.start_browser
     @search_term = 'ruthtech.com'
   end
 
@@ -41,9 +41,5 @@ describe 'All: ', :local do
     it 'should have popular repo' do
       expect(driver.find_element(GitHubPage::POPULAR_REPO).displayed?).to be true
     end
-  end
-
-  after(:all) do
-    BaseClass.driver.quit
   end
 end
